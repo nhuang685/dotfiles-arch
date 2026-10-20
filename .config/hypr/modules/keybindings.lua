@@ -6,7 +6,8 @@
 local terminal = 'ghostty'
 local fileManager = 'nautilus'
 local menu = 'hyprlauncher'
-local browser = 'firefox'
+local browser = 'firefox --profile ~/.config/mozilla/firefox/ioedvixx.default-release'
+local school = 'firefox --profile ~/.config/mozilla/firefox/foto4ODB.Profile\\ 1'
 
 ---------------------
 ---- KEYBINDINGS ----
@@ -30,6 +31,7 @@ hl.bind(mainMod .. ' + ' .. secondMod .. ' + comma', hl.dsp.exec_cmd 'hyprlock')
 hl.bind(mainMod .. ' + Q', hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. ' + E', hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. ' + B', hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. ' + SHIFT + B', hl.dsp.exec_cmd(school))
 hl.bind(mainMod .. ' + Space', hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. ' + N', hl.dsp.exec_cmd 'swaync-client -t -sw')
 hl.bind(mainMod .. ' + O', hl.dsp.exec_cmd ' hyprpicker | wl-copy')

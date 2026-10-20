@@ -316,3 +316,7 @@ transr() {
   cargo build
   cd $cwd
 }
+
+cr-link() {
+  ifuse --documents org.videolan.vlc-ios ~/iphone-files
+}
